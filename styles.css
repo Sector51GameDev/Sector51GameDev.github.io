@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+body {
+    background-color: rgb(37, 37, 37);
+}
+
 .header {
     height: 30%;
     background-color: rgb(37, 37, 37);
@@ -10,12 +14,40 @@
 
 .sectorTitle {
     margin-top: -10px;
-    margin-left: 5%;
+    margin-left: 5.5%;
+}
+
+.sectorTitle>img {
+    width: 15.625vw;
+}
+
+.insta,
+.gplay,
+.reddit,
+.tiktok,
+.youtube {
+    width: 5.208vw;
+}
+
+.mediaWrap {
+    margin-top: -5%;
+    margin-left: 8%;
+    margin-bottom: 5%;
+    display: grid;
+    grid-template-columns: 5vw 5vw 5vw 5vw 5vw 10vw;
+    grid-gap: 1vw;
+}
+
+.textWrap>p {
+    font-family: 'Bungee', cursive;
+    font-size: 1.8vw;
+    line-height: 2.5vw;
+    color: #ffc000;
 }
 
 .sectorSkull {
     margin-top: -10%;
-    margin-right: 10%;
+    margin-right: 7%;
     float: right;
 }
 
@@ -27,11 +59,14 @@
     margin-left: 8%;
     font-family: 'Bungee', cursive;
     font-size: 2vw;
-    color: blue;
+    color: #ffc000;
 }
 
 .games {
-    height: 1000px;
+    background-color: rgb(37, 37, 37);
+    background-image: url("Art/PixelSVG.png");
+    background-size: 26.667vw;
+    height: 53vw;
 }
 
 .arcadeAuto {
@@ -93,5 +128,134 @@
     position: absolute;
     font-family: 'Bungee', cursive;
     font-size: 1.3vw;
-    color: blue;
+    color: #ffc000;
+}
+
+.bottom {
+    height: 4vw;
+    text-align: center;
+}
+
+.bottom>p {
+    margin-top: 2.5%;
+    font-size: 2vw;
+    font-family: 'Bungee', cursive;
+    color: #000000;
+}
+
+@media screen and (max-width: 800px) {
+    .sectorTitle {
+        margin-top: -10px;
+        text-align: center;
+        margin-left: 0%;
+    }
+    .sectorTitle>img {
+        width: 50vw;
+    }
+    .mediaWrap {
+        margin-top: -15%;
+        display: grid;
+        grid-template-columns: 5vw 5vw 5vw 5vw 5vw;
+        grid-gap: 12vw;
+    }
+    .insta,
+    .gplay,
+    .reddit,
+    .tiktok,
+    .youtube {
+        width: 15vw;
+    }
+    .textWrap {
+        text-align: center;
+    }
+    .textWrap>p {
+        font-family: 'Bungee', cursive;
+        font-size: 5vw;
+        line-height: 6vw;
+        color: #ffc000;
+        text-align: center;
+    }
+    .sectorSkull {
+        margin-top: -5%;
+        margin-right: 7%;
+        float: right;
+    }
+    .sectorSkull>img {
+        width: 40vw;
+    }
+    .header>p {
+        margin-left: 8%;
+        font-family: 'Bungee', cursive;
+        font-size: 3vw;
+        color: #ffc000;
+    }
+    .games {
+        display: grid;
+        grid-template-rows: 100vw 100vw 100vw;
+        width: 100%;
+        height: 370vw;
+        background-image: url("Art/PixelSVG.png"), center, 100%, repeat;
+    }
+    .arcadeAuto {
+        margin-top: 7%;
+    }
+    .arcadeImg {
+        position: absolute;
+        margin-left: 10%;
+        width: 80vw;
+        z-index: 0;
+    }
+    .SBLogo {
+        position: absolute;
+        width: 25%;
+        margin-top: 19%;
+        margin-left: 38%;
+    }
+    .SBTitle {
+        position: absolute;
+        width: 30%;
+        margin-top: 35%;
+        margin-left: 38%;
+    }
+    .mediaContainer {
+        margin-top: -8%;
+        margin-left: 15%;
+    }
+    .mediaContainer>.borderImg {
+        width: 72vw;
+        height: 132vw;
+    }
+    .mediaContainer>video {
+        margin-left: 2%;
+        width: 70vw;
+        height: 127.7vw;
+    }
+    .infoContainer {
+        margin-left: 15%;
+    }
+    .infoContainer>.borderImg {
+        width: 72vw;
+        height: 132vw;
+        margin-top: 35vw;
+    }
+    .infoContainer>p {
+        line-height: 5vw;
+        width: 61vw;
+        margin-left: 6%;
+        margin-top: 41.5%;
+        position: absolute;
+        font-family: 'Bungee', cursive;
+        font-size: 4.8vw;
+        color: #ffc000;
+    }
+    .bottom {
+        min-height: 10vw;
+        text-align: center;
+    }
+    .bottom>p {
+        margin-top: 2.5%;
+        font-family: 'Bungee', cursive;
+        color: #000000;
+        font-size: 3vw;
+    }
 }
